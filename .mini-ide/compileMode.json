@@ -1,0 +1,22 @@
+{
+  "modes": [
+    {
+      "title": "pages/main-video/main-video",
+      "page": "pages/main-video/main-video",
+      "launchMode": "common",
+      "pageQuery": ""
+    },
+    {
+      "title": "视频详情页",
+      "page": "pages/detail-video-item/detail-video-item",
+      "launchMode": "common",
+      "pageQuery": ""
+    },
+    {
+      "title": "pages/music-player/music-player",
+      "page": "pages/music-player/music-player",
+      "launchMode": "common",
+      "pageQuery": "id=1397345903"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+<import-sjs from="../../services/format.sjs" name="format" />
+<view class="list">
+  <view class="list_item" a:for="{{ videoList }}" onTap="onItemTap" data-item="{{item}}">
+      <view class="album">
+        <image class="image" mode="widthFix" src="{{item.cover}}" />
+        <view class="info">
+          <view class="count">{{format.countFormat(item.playCount)}}</view>
+          <view class="duration">{{format.durationFormat(item.mv.videos[0].duration)}}</view>
+        </view>
+      </view>
+      <view class="name">
+        {{item.name}}
+      </view>
+  </view>
+</view>

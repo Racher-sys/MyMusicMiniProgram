@@ -1,0 +1,41 @@
+.body {
+  width: 220rpx;
+  height: 320rpx;
+  margin-right: 15rpx;
+}
+
+.top {
+  position: relative;
+  width: 220rpx;
+  height: 220rpx;
+}
+.top .image {
+  width: 100%;
+  height: 100%;
+}
+
+.top .count {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 6rpx;
+  border-radius: 4rpx;
+  color: white;
+  font-size: 20rpx;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.info {
+  margin-top: 8rpx;
+  font-size: 28rpx;
+  /* 只显示两行 */
+  display: -webkit-box;
+  /* display:; */
+  /* display: inline-block; */
+  /* white-space: nowrap; */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /* background-color: aqua; */
+  -webkit-line-clamp: 2;
+}
+

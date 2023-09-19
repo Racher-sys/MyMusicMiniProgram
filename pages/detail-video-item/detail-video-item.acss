@@ -1,0 +1,40 @@
+page {
+  /* 100vh就是高度就是视口的高度 */
+  height: 100vh;
+}
+.video {
+  /* position: fixed;
+  top: 0; */
+  width: 100%;
+}
+.content {
+  height: calc(100% - 225px) ;
+}
+.info {
+  font-size: 28rpx;
+  margin: 25rpx;
+  /* margin-top: 450rpx; */
+}
+
+.info .name {
+  font-size: 2em;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 20rpx;
+}
+
+.info .artist {
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 20rpx;
+}
+
+.info .count {
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.title {
+  font-size: 1.3em;
+  margin: 50rpx 0 30rpx 25rpx; 
+}

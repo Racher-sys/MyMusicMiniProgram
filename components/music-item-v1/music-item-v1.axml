@@ -1,0 +1,10 @@
+<view class="item" onTap="musicPlayTap">
+  <view class="left">
+    <image class="image" mode="scaleToFill" src="{{recommendItem.al.picUrl}}" />
+    <view class="info">
+      <view class="name">{{recommendItem.name}}</view>
+      <view class="artist">{{recommendItem.ar[0].name}} - {{recommendItem.al.name}}</view>
+    </view>
+  </view>
+  <van-icon name="arrow" class="icon"></van-icon>
+</view>

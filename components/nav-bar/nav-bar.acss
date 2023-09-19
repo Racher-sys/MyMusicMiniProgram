@@ -1,0 +1,16 @@
+.navbar {
+  position:fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+}
+.navbar .left, .navbar .right {
+  width: 200rpx;
+}
+
+.navbar .middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}

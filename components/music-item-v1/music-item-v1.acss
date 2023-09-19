@@ -1,0 +1,37 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  height: 150rpx;
+  margin: 30rpx 0;
+}
+.left {
+  display: flex;
+  width: 450rpx;
+}
+.image {
+  flex: 1;
+  border-radius: 10rpx;
+  height: 100%;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  margin-left: 10rpx;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  font-size: 35rpx;
+  margin-bottom: 5rpx;
+}
+
+.artist {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, 0.6);
+}

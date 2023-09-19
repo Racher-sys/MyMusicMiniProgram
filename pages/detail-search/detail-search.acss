@@ -1,0 +1,7 @@
+page {
+  /* 这个是vant组件库暴露的属性变量 */
+  --search-background-color: white;
+}
+.van-search {
+  background-color: #fafafa !important; 
+}

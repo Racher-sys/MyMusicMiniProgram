@@ -1,0 +1,12 @@
+<view>
+  <block a:for="{{ tags }}" a:key="id" a:for-item="tag">
+    <area-header title="{{tag.name}}" isShowMore="{{false}}"/>
+    <!-- <block a:for="{{ menus.slice(index) }}" a:for-item="menu"> -->
+      <view class="list">
+        <block a:for="{{ menus[index].playlists }}" a:for-item="menuItem">
+          <music-item-v2 hotMenuItem="{{menuItem}}"/>
+        </block>
+      </view>
+    <!-- </block> -->
+  </block>
+</view>

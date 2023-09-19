@@ -1,0 +1,103 @@
+page {
+  position: relative;
+  z-index: 0;
+  color: white;
+}
+.bg-img {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.bg-cover {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(30rpx);
+}
+.image {
+  width: 600rpx;
+  height: 600rpx;
+}
+
+.name {
+  margin: 50rpx 0 20rpx 60rpx;
+  font-size: 60rpx;
+  font-weight: 500;
+  color: white;
+}
+
+.artist {
+  margin-left: 60rpx;
+  font-size: 35rpx;
+}
+
+.tab {
+  color: #aaa;
+  display: flex;
+}
+
+.tab .devide {
+  margin: 0 10rpx;
+}
+
+.tab .active {
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 60rpx 50rpx;
+}
+
+.content .album {
+  flex: 6;
+}
+.content .info {
+  flex: 1.3;
+}
+
+.content .lyric {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .progress {
+  flex: 1;
+
+}
+
+.content .progress .time {
+  display: flex;
+  justify-content: space-between;
+  margin: 10rpx 0;
+}
+
+.content .control {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 
+.lyric-list :nth-child(1){
+  margin-top: 500rpx;
+} */
+
+.lyric {
+  color: #aaa;
+  font-size: 30rpx;
+  text-align: center;
+  height: 50rpx;
+  line-height: 50rpx;
+}

@@ -1,0 +1,7 @@
+<view class="navbar" style="margin-top:{{statusBarHeight}}; height: {{titleBarHeight}};">
+  <view class="left"></view>
+  <view class="middle">
+    <slot name="content">歌曲播放</slot>
+  </view>
+  <view class="right"></view>
+</view>

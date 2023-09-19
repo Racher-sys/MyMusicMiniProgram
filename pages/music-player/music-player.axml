@@ -1,0 +1,78 @@
+<view>
+  <!-- 1. 设置背景 -->
+  <image class="bg-img" mode="scaleToFill" src="{{songInfo.al.picUrl}}" />
+  <view class="bg-cover"></view>
+  <!-- 2. 自定义导航栏 ,导航栏包括两个部分：状态栏和标题栏-->
+  <nav-bar 
+    statusBarHeight="{{statusBarHeight}}"
+    titleBarHeight="{{titleBarHeight}}">
+    <view class="tab" slot="content">
+      <block a:for="{{ tab }}">
+        <view 
+          class="tab-content {{currentContent === index ? 'active': ''}}"
+          >
+          {{item}}
+      </view>
+        <view class="devide" a:if="{{ index !== tab.length -1 }}">|</view>
+      </block>
+    </view>
+    </nav-bar>
+  <!-- <image class="image" mode="scaleToFill" src="{{songInfo.al.picUrl}}" /> -->
+  <swiper
+    style="top: {{statusBarHeight + titleBarHeight}}; position:fixed "
+    indicator-dots="{{false}}"
+    onChange="swiperChangeTap"
+    current="{{currentContent}}"
+     >
+      <swiper-item >
+       <view class="content" style="height: {{contentHeight}}">
+         <view class="album">
+          <image mode="widthFix" style="width:100%;" src="{{songInfo.al.picUrl}}" /> 
+         </view>
+         <view class="info">
+           <view style="font-size:55rpx; margin: 10rpx 0 15rpx 0;">{{songInfo.name}}</view>
+           <view style="font-size:30rpx">{{songInfo.ar[0].name}}</view>
+         </view>
+         <view class="lyric">
+           这是一句歌词
+         </view>
+         <view class="progress">
+           <slider handle-size="12" onChanging="onChanging" />
+           <view class="time">
+            <text class="current-time">10:20</text>
+            <text class="total-time">40:45</text> 
+           </view>
+         </view>
+         <view class="control">
+           <image mode="scaleToFill" a:if="{{ playMode === 0 }}" onTap="onModeChange" style="height:70rpx; width:70rpx;" src="/asserts/images/player/play_order.png" />
+           <image mode="scaleToFill" a:if="{{ playMode === 1 }}" onTap="onModeChange" style="height:70rpx; width:70rpx;" src="/asserts/images/player/play_random.png" />
+           <image mode="scaleToFill" a:if="{{ playMode === 2 }}" onTap="onModeChange" style="height:70rpx; width:70rpx;" src="/asserts/images/player/play_repeat.png" />
+           
+           <image mode="scaleToFill" onTap="onPreTap" style="height:80rpx; width:80rpx;" src="/asserts/images/player/play_prev.png" />
+            <image onTap="onPlayTap" a:if="{{ !isPlay }}" mode="scaleToFill" style="height:100rpx; width:100rpx;" src="/asserts/images/player/play_resume.png" />
+            <image onTap="onPlayTap" a:if="{{ isPlay }}"  mode="scaleToFill" style="height:100rpx; width:100rpx;" src="/asserts/images/player/play_pause.png" />
+           
+           
+           <image mode="scaleToFill" onTap="onNextTap" style="height:80rpx; width:80rpx;" src="/asserts/images/player/play_next.png" />
+           <image mode="scaleToFill" style="height:70rpx; width:70rpx;" src="/asserts/images/player/play_music.png" />
+         </view>
+       </view>
+      </swiper-item>
+
+      <!-- 歌词展示界面 -->
+      <swiper-item>
+        <scroll-view scroll-y="{{true}}" style="height: 95%;" scroll-top="100rpx">
+          <view style="margin:50rpx 0;" class="lyric-list" >
+            <block a:for="{{ lyricInfo }}" a:key="{{time}}" >
+              <view class="lyric">
+                {{item.text}}
+              </view>
+            </block>
+            </view>
+        </scroll-view>
+      </swiper-item>
+    
+  </swiper>
+  
+ 
+</view>

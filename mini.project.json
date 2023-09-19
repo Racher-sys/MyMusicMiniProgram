@@ -1,0 +1,10 @@
+{
+  "enableAppxNg": true,
+  "component2": true,
+  "enableNodeModuleBabelTransform": true,
+  "node_modules_es6_whitelist": [
+    "hy-event-store",
+    "axios"
+  ],
+  "enableHMR": false
+}

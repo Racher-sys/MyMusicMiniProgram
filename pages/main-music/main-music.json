@@ -1,0 +1,9 @@
+{
+  "defaultTitle": "推荐音乐",
+  "usingComponents": {
+    "van-search": "vant-aliapp/dist/dist/search/index",
+    "area-header": "/components/area-header/area-header",
+    "music-item-v1": "/components/music-item-v1/music-item-v1",
+    "music-item-v2": "/components/music-item-v2/music-item-v2"
+  }
+}

@@ -1,0 +1,34 @@
+<van-search 
+  v-model="value"
+  shape="round"
+  placeholder="请输入搜索关键词"
+  onFocus="onClickTap"
+  />
+<view>
+  <swiper indicator-dots="{{true}}" autoplay style="border-radius: 10rpx;">
+    <block a:for="{{banners}}" a:key="bannerId">
+      <swiper-item class="blo">
+        <image class="image" mode="widthFix" src="{{item.pic}}" />
+        <!-- <view style="background-color: {{item}};width:100%;height:300rpx"/> -->
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- 歌曲推荐展示 -->
+<view class="recommand" a:if="{{ recommendSongLists.length > 0}}">
+  <area-header title="歌曲推荐" isShowMore="{{true}}" onMoreTap="onMoreClick"/>
+  <block a:for="{{ recommendSongLists }}" a:key="id">
+    <music-item-v1 recommendItem="{{item}}"></music-item-v1>
+  </block>
+</view>
+
+<!-- 热门歌单展示 -->
+<view class="hotMenu" a:if="{{ hotMenuLists.length > 0 }}" >
+  <area-header title="热门歌单" isShowMore="{{true}}" onMoreTap="onMenuTap"/>
+  <scroll-view class="hotList" scroll-x="{{true}}">
+    <block a:for="{{ hotMenuLists }}" a:key="id">
+      <music-item-v2 hotMenuItem="{{item}}"></music-item-v2>
+    </block>
+  </scroll-view>
+</view>

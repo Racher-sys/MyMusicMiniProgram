@@ -1,0 +1,8 @@
+<import-sjs from="/services/format.sjs" name="format" />
+<view class="body">
+  <view class="top">
+    <image class="image" mode="widthFix" src="{{hotMenuItem.coverImgUrl}}" />
+    <view class="count">{{format.countFormat(hotMenuItem.playCount)}}</view>
+  </view>
+  <view class="info">{{hotMenuItem.name}}</view>
+</view>

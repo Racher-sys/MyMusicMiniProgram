@@ -1,0 +1,8 @@
+<view class="header">
+  <view class="title">{{title}}</view>
+  <view class="right" a:if="{{ isShowMore }}" onTap="onMoreclick">
+    <view class="more">更多</view>
+    <van-icon name="arrow" />
+  </view>
+</view>
+

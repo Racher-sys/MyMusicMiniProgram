@@ -1,0 +1,20 @@
+<!-- Detail: {{id}} -->
+<import-sjs from="/services/format.sjs" name="format" />
+<video class="video" src="{{videoUrl}}" autoplay ></video>
+<scroll-view class="content" scroll-y >
+  <view class="info">
+    <view class="name">{{detail.name}}</view>
+    <view class="artist">{{detail.artistName}}</view>
+    <view class="count">{{format.countFormat(detail.playCount)}}次播放 - {{detail.publishTime}}</view>
+  </view>
+
+  <view class="title">推荐视频</view>
+
+  <block a:for="{{ relativeVideo }}">
+    <view style="height:100rpx;">
+      {{item}}
+    </view>
+  </block>
+</scroll-view>
+
+

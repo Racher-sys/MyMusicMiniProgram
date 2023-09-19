@@ -1,0 +1,20 @@
+page {
+  /* 这个是vant组件库暴露的属性变量 */
+  --search-background-color: white;
+  --search-padding: 10px 0;
+  padding: 0 30rpx;
+}
+.van-search {
+  background-color: #fafafa !important; 
+}
+.image {
+  width: 100%;
+}
+
+.hotList {
+  display: flex;
+  /* display: inline-block; */
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  /* overflow: hidden; */
+}

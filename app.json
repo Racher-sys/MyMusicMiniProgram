@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/main-music/main-music",
+    "pages/main-video/main-video",
+    "pages/detail-video-item/detail-video-item",
+    "pages/detail-search/detail-search",
+    "pages/detail-more/detail-more",
+    "pages/detail-menu/detail-menu",
+    "pages/music-player/music-player"
+  ],
+  "window": {
+    "defaultTitle": "My App",
+    "allowsBounceVertical": "YES"
+  },
+  "behavior": {
+    "requestReferrerStrategy": "page"
+  },
+  "tabBar": {
+    "textColor": "",
+    "selectedColor": "#008B45",
+    "backgroundColor": "",
+    "items": [
+      {
+        "icon": "asserts/images/tabbar/music_normal.png",
+        "activeIcon": "asserts/images/tabbar/music_active.png",
+        "pagePath": "pages/main-music/main-music",
+        "name": "音乐"
+      },
+      {
+        "icon": "asserts/images/tabbar/video_normal.png",
+        "activeIcon": "asserts/images/tabbar/video_active.png",
+        "pagePath": "pages/main-video/main-video",
+        "name": "视频"
+      }
+    ]
+  }
+}

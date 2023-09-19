@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  margin: 30rpx 0;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 50rpx;
+  font-weight: 600;
+}
+
+.right {
+  display: flex;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.more {
+  display: flex;
+  align-items: center;
+  margin-right: 5rpx;
+}
